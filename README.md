@@ -55,40 +55,40 @@ API 명세와 백엔드/프론트엔드 개발의 협업 과정에서 API 명세
   : 작성된 API 문서 마크다운 양식 Export 기능 구현
   <img src='./img/Export.JPG' alt="" width="">
 
-- 코드 스니펫
+- 코드 스니펫   
   : 작성된 API 문서 코드 스니펫(Axios, Fetch) 기능 구현
   <img src='./img/CodeSnipet.JPG' alt="" width="">
 
 ## 2. API Test
-- API Test (Back-End 사용자 기준)   
+- API Test (Back-End 사용자 기준)    
   : 작성한 명세서 기반으로 Back Server에 API TEST 결과 산출   
   <img src='./img/ApiTestBack.JPG' alt="" width="">
 
-- API Test (Front-End 사용자 기준)   
+- API Test (Front-End 사용자 기준)    
   : 작성한 코드를 기반으로 Back Server 없이도 Mock API를 통해서 결과 FeedBack   
   <img src='./img/ApiTestFront.png' alt="" width="">
   
-- API OverView
+- API OverView   
   : 테스트 완료된 데이터는 Overview에서 실시간 확인 및 분석 (LS : Local Status // SS : Server Status)
   <img src='./img/ApiTestOverview.JPG' alt="" width="">
 
 ## 3. API DashBoard
 
-- API Dashboard
+- API Dashboard   
   : 테스트 완료 시 실시간 완료 여부 Graph 모니터링
   <img src='./img/Dashboard.png' alt="" width="">
 
 ## 4. 추가 기능
 
 - Workspace Interface
-  : 개발 프로젝트 별 환경 구성
+  : 개발 프로젝트 별 환경 구성   
   <img src='./img/Workspace.JPG' alt="" width="">
 
-- Setting 환경 구성
+- Setting 환경 구성   
   : User 정보 변경, Theme 설정, Invitation 기능 Alarm 기능
   <img src='./video/setting.gif' alt="" width="">
 
-- WorkSpace Setting
+- WorkSpace Setting   
   : 워크스페이스 정보 변경, 유저 초대
   <img src='./video/Invite.gif' alt="" width="">
 
