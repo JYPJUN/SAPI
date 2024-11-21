@@ -143,3 +143,158 @@ API 명세와 백엔드/프론트엔드 개발의 협업 과정에서 API 명세
 </h1>
 
 # :six: 적용 기술 세부사항
+
+- 추후 작성
+
+# :seven: Git Graph 및 문서 구조
+
+<img src='./video/GitGraph.gif' alt="" width="">
+
+```
+frontend                                                                    
+├─ node_modules                                  
+├─ public                                                                   
+│  ├─ 404page.JPG                                                           
+│  └─ vite.svg                                                              
+├─ src                                                                      
+│  ├─ api                                                                   
+│  │  ├─ queries                                                            
+│  │  │  ├─ useApiDashboardQueries.js                                
+│  │  │  ├─ useApiDocsQueries.js                                        
+│  │  │  ├─ useApiHistory.js                                               
+│  │  │  ├─ useApiTestQueries.js                                         
+│  │  │  ├─ useAPIUserQueries.js                                        
+│  │  │  ├─ useAuthQueries.js                                             
+│  │  │  ├─ useCommentsQueries.js                                     
+│  │  │  ├─ useEnvironmentQueries.js                                  
+│  │  │  ├─ useNotificationsQueries.js                                 
+│  │  │  └─ useWorkspaceQueries.js                                    
+│  │  └─ axiosInstance.js                                                   
+│  ├─ assets                                                                
+│  ├─ components                                                            
+│  │  ├─ common                                                             
+│  │  │  ├─ Alarm.jsx                                                       
+│  │  │  ├─ CheckModal.jsx                                                
+│  │  │  ├─ Environment.jsx                                                
+│  │  │  ├─ Header.jsx                                                      
+│  │  │  ├─ Navbar.jsx                                                      
+│  │  │  ├─ Sidebar_nouse.jsx                                             
+│  │  │  ├─ TabBar.jsx                                                      
+│  │  │  └─ TextInput.jsx                                                   
+│  │  ├─ layout                                                             
+│  │  │  ├─ Layout.jsx                                                      
+│  │  │  └─ NavigationLayout.jsx                                         
+│  │  └─ sidebar                                                            
+│  │     ├─ ApiDocsSidebar.jsx                                             
+│  │     ├─ ApiTestSidebar.jsx                                              
+│  │     ├─ DashboardSidebar.jsx
+│  │     └─ EnvironmentSidebar.jsx                                        
+│  ├─ contexts                                                              
+│  │  ├─ WebSocketProvider.jsx                                           
+│  │  └─ YjsProvider.jsx                                                    
+│  ├─ handlers                                                              
+│  │  └─ apiMessagehandler.js                                             
+│  ├─ hooks                                                                 
+│  │  ├─ useAuth.jsx                                                        
+│  │  ├─ useFieldStates.jsx                                                 
+│  │  ├─ useOccupationStatus.jsx                                         
+│  │  ├─ useTabs.jsx                                                        
+│  │  └─ useYjs.jsx                                                         
+│  ├─ pages                                                                 
+│  │  ├─ ApiTest                                                            
+│  │  │  ├─ APItest.jsx                                                                              
+│  │  │  ├─ ApiTestDetail.jsx                                               
+│  │  │  ├─ ApiTestParameters.jsx                                        
+│  │  │  ├─ ApiTestRequestBody.jsx                                     
+│  │  │  └─ ApiTestResponseBody.jsx                                   
+│  │  ├─ Dashboard                                                          
+│  │  │  ├─ ApiDevelopmentProgress.jsx                               
+│  │  │  ├─ ApiDevelopmentStatus.jsx                                  
+│  │  │  └─ DashboardOverview.jsx                                      
+│  │  ├─ docs                                                               
+│  │  │  ├─ History                                                         
+│  │  │  │  ├─ History.jsx                                                  
+│  │  │  │  ├─ HistoryDetail.jsx                                          
+│  │  │  │  ├─ HistoryParameters.jsx                                   
+│  │  │  │  ├─ HistoryRequest.jsx                                       
+│  │  │  │  └─ HistoryResponse.jsx                                     
+│  │  │  ├─ DeleteModal.jsx                                               
+│  │  │  ├─ HistoryDetail.jsx                                               
+│  │  │  ├─ LeftSection.jsx                                                 
+│  │  │  ├─ LeftSectionCategory.jsx                                      
+│  │  │  ├─ LeftSectionDescription.jsx                                   
+│  │  │  ├─ LeftSectionName.jsx                                          
+│  │  │  ├─ LeftSectionPath.jsx                                            
+│  │  │  ├─ Parameters.jsx                                                 
+│  │  │  ├─ ParametersAuthType.jsx                                     
+│  │  │  ├─ ParametersCookies.jsx                                       
+│  │  │  ├─ ParametersHeaders.jsx                                      
+│  │  │  ├─ ParametersQueryParameters.jsx                         
+│  │  │  ├─ Request.jsx                                                     
+│  │  │  ├─ RequestFormData.jsx                                        
+│  │  │  ├─ RequestJson.jsx                                                
+│  │  │  ├─ Response.jsx                                                    
+│  │  │  ├─ ResponseAdd.jsx                                              
+│  │  │  ├─ RightSection.jsx                                                
+│  │  │  ├─ RightSectionCodeSnippet.jsx                              
+│  │  │  ├─ RightSectionComments.jsx                                 
+│  │  │  ├─ RightSectionInfo.jsx                                          
+│  │  │  └─ RightSectionSummary.jsx                                   
+│  │  ├─ Environment                                                        
+│  │  │  ├─ DraggableRow.jsx                                             
+│  │  │  ├─ DropdownMenu.jsx                                           
+│  │  │  └─ Environment.jsx                                                
+│  │  ├─ Settings                                                           
+│  │  │  ├─ SettingInvitation.jsx                                           
+│  │  │  ├─ SettingMember.jsx                                            
+│  │  │  ├─ Settings.jsx                                                    
+│  │  │  ├─ SettingTheme.jsx                                              
+│  │  │  ├─ SettingUser.jsx                                                 
+│  │  │  └─ SettingWorkspace.jsx                                        
+│  │  ├─ Workspace                                                          
+│  │  │  ├─ CreateWorkspace.jsx                                         
+│  │  │  ├─ DoneSection.jsx                                               
+│  │  │  ├─ Header.jsx                                                      
+│  │  │  ├─ InProgressSection.jsx                                         
+│  │  │  ├─ InviteUser.jsx                                                  
+│  │  │  ├─ OptionMenu.jsx                                                
+│  │  │  ├─ Settings.jsx                                                    
+│  │  │  ├─ WorkspaceRow.jsx                                            
+│  │  │  ├─ WorkspaceSelection.jsx                                      
+│  │  │  └─ WorkspaceTable.jsx                                           
+│  │  ├─ 404page.jsx                                                        
+│  │  ├─ ApiDocsDetail.jsx                                                  
+│  │  ├─ ApiOverview.jsx                                                    
+│  │  ├─ Login.jsx                                                          
+│  │  ├─ SignUp.jsx                                                         
+│  │  └─ Workspace.jsx                                                      
+│  ├─ routes                                                                
+│  │  └─ AppRoutes.jsx                                                      
+│  ├─ stores                                                                
+│  │  ├─ useAlarmStore.js                                                   
+│  │  ├─ useAuthStore.js                                                    
+│  │  ├─ useEnvironmentStore.js                                          
+│  │  ├─ useNavbarStore.js                                                 
+│  │  ├─ useSidebarStore.js                                                 
+│  │  ├─ useTabStore.js                                                     
+│  │  ├─ useTestStore.js                                                    
+│  │  └─ useThemeStore.js                                                  
+│  ├─ styles                                                                
+│  ├─ utils                                                                 
+│  │  ├─ connectToStomp.js                                                
+│  │  └─ cookies.js                                                         
+│  ├─ App.jsx                                                               
+│  ├─ main.jsx                                                              
+├─ Dockerfile                                                               
+├─ eslint.config.js                                                         
+├─ index.html                                                               
+├─ main.cjs                                                                 
+├─ nginx.conf                                                               
+├─ package-lock.json                                                        
+├─ package.json                                                             
+├─ postcss.config.js                                                        
+├─ README.md                                                                
+├─ tailwind.config.js                                                       
+└─ vite.config.js                                                           
+```
+
