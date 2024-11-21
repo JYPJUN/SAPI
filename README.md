@@ -72,7 +72,13 @@ API 명세와 백엔드/프론트엔드 개발의 협업 과정에서 API 명세
   : 테스트 완료된 데이터는 Overview에서 실시간 확인 및 분석 (LS : Local Status // SS : Server Status)
   <img src='./img/ApiTestOverview.JPG' alt="" width="">
 
-## 2. 추가 기능
+## 3. API DashBoard
+
+- API Dashboard
+  : 테스트 완료 시 실시간 완료 여부 Graph 모니터링
+  <img src='./img/Dashboard.png' alt="" width="">
+
+## 4. 추가 기능
 
 - Workspace Interface
   : 개발 프로젝트 별 환경 구성
@@ -81,6 +87,10 @@ API 명세와 백엔드/프론트엔드 개발의 협업 과정에서 API 명세
 - Setting 환경 구성
   : User 정보 변경, Theme 설정, Invitation 기능 Alarm 기능
   <img src='./video/setting.gif' alt="" width="">
+
+- WorkSpace Setting
+  : 워크스페이스 정보 변경, 유저 초대
+  <img src='./video/Invite.gif' alt="" width="">
 
 </br>  
 </br>  
@@ -119,15 +129,17 @@ API 명세와 백엔드/프론트엔드 개발의 협업 과정에서 API 명세
 </br>  
 
 # :four: 아키텍처   
+<h1 align="center">
   <img src='./img/Architecture.JPG' alt="" width="">  
+</h1>
+  
 
 </br>  
 </br>  
   
 # :five: 기대효과  
 <h1 align="center">
-  <img src='./img/Effect.png' alt="" width="50%">
+  <img src='./img/Effect.png' alt="" width="">
 </h1>
-  
 
-# :six: 
+# :six: 적용 기술 세부사항
