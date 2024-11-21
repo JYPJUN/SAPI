@@ -60,11 +60,11 @@ API 명세와 백엔드/프론트엔드 개발의 협업 과정에서 API 명세
   <img src='./img/CodeSnipet.JPG' alt="" width="">
 
 ## 2. API Test
-- API Test (Back-End 사용자 기준)   
+- API Test (Back-End 사용자 기준)    
   : 작성한 명세서 기반으로 Back Server에 API TEST 결과 산출   
   <img src='./img/ApiTestBack.JPG' alt="" width="">
 
-- API Test (Front-End 사용자 기준)   
+- API Test (Front-End 사용자 기준)    
   : 작성한 코드를 기반으로 Back Server 없이도 Mock API를 통해서 결과 FeedBack   
   <img src='./img/ApiTestFront.png' alt="" width="">
   
