@@ -51,6 +51,10 @@ API 명세와 백엔드/프론트엔드 개발의 협업 과정에서 API 명세
   : 웹소켓으로 실시간 문서 작성 협업 기능 구현
   <img src='./video/realtime editing.gif' alt="" width="">
 
+- 명세 코멘트   
+  : 작성된 문서에 코멘트 기능 구현
+  <img src='./video/Comment.gif' alt="" width="">
+
 - 명세 추출 (export 기능)   
   : 작성된 API 문서 마크다운 양식 Export 기능 구현
   <img src='./img/Export.JPG' alt="" width="">
@@ -62,7 +66,7 @@ API 명세와 백엔드/프론트엔드 개발의 협업 과정에서 API 명세
 ## 2. API Test
 - API Test (Back-End 사용자 기준)    
   : 작성한 명세서 기반으로 Back Server에 API TEST 결과 산출   
-  <img src='./img/ApiTestBack.JPG' alt="" width="">
+  <img src='./video/API-Test.gif' alt="" width="">
 
 - API Test (Front-End 사용자 기준)    
   : 작성한 코드를 기반으로 Back Server 없이도 Mock API를 통해서 결과 FeedBack   
@@ -297,4 +301,3 @@ frontend
 ├─ tailwind.config.js                                                       
 └─ vite.config.js                                                           
 ```
-
